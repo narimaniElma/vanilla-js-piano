@@ -18,7 +18,7 @@ const pressKeys = (event) => {
 };
 
 const playPiano = (key) => {
-  audioElem.setAttribute("src", `./public/tunes/${key}.wav`);
+  audioElem.setAttribute("src", `./tunes/${key}.wav`);
   audioElem.play();
 
   const mainKeyElem = document.querySelector(`[data-key='${key}']`);
